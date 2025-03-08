@@ -12,6 +12,4 @@ Key Features :
 ✅ History & Logs – Track all approvals, rejections, and student movements.
 ✅ Mobile & Web-Friendly – Accessible from any device for convenience.
 
-EduPermit enhances efficiency, reduces administrative burden, and ensures a secure, transparent process for student movement. 🚀✨
-
-[GitHub Repository Link] (Add your repo link here)
+EduPermit enhances efficiency, reduces administrative burden, and ensures a secure, transparent process for student movement.
