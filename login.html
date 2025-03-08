@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            background: url(img/college-background.jpg);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #login-container {
+            background-color: #fff;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        #company-logo {
+            max-width: 100%;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+     <div id="login-container">
+        <img id="company-logo" src="img/epermit.png" alt="Company Logo">
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="User ID" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <input type="submit" value="Login" onclick="window.location.href = 'gate_acceptance.html';">
+        </form>
+    </div>
+    </head>
+</body>
+</html>

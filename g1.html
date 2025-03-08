@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .red-section {
+    background-color: red;
+    font-color: white;
+font-size: 40px;
+height: 10vh;
+  } 
+  .logo-section {
+    font-color: solid black
+  font-size: 40px;
+height: 30vh;
+
+  }
+h2
+{
+text-align: right;}
+img
+{
+width: 1000px;
+  height: 150px;}
+
+
+.datetime-container {
+      display: flex;
+      justify-content: space-between;
+      width: 400px; /* Adjust the width as needed */
+      margin: auto;
+    }
+
+    .calendar {
+      width: 48%; /* Adjust the width as needed */
+    }
+
+    .time {
+      width: 48%; /* Adjust the width as needed */
+    }
+
+</style>
+<head>
+<div class="red-section">
+<h2>
+      <button type="submit" value="virtual tour">virtual home</button>  
+ <button type="submit" value="Examination">Examinations</button>
+      <button type="submit" value="IQAC">IQAC</button>  
+      <button type="submit" value="R&D">R&D</button>  
+      <button type="submit" value="IIIC">IIIC</button>  
+      <button type="submit" value="SAC">SAC</button>  
+      <button type="submit" value="Events">Events</button>  
+      <button type="submit" value="Achievements">Achievements</button>  
+<button type="submit" value="Contact Us">Contact Us</button> 
+</h2><hr>
+</div>
+<div class="logo-section">
+<img src="vbitlogo.jpg">
+  <h2>
+<SELECT NAME="ABOUT US" >
+<OPTION VALUE=ABOUT US>ABOUT US</OPTION>
+<OPTION VALUE=Overview>Overview</OPTION>
+<OPTION VALUE=Core Values>Core Values</OPTION>
+<OPTION VALUE=Management>Management</OPTION>
+<OPTION VALUE=Academic Leadership>Academic Leadership</OPTION>
+<OPTION VALUE=Brochure&Policy>Brochure&Policy</OPTION>
+</SELECT>
+<select name="facilities" >
+<option value=FACILITIES>FACILITIES</OPTION>
+<OPTION VALUE=Academics>Academics</OPTION>
+<option value=Central Library>Central Library</OPTION>
+<option value=Infrastructure>Infrastructure</OPTION>
+<option value=Hostels>Hostels</OPTION>
+<option value=Sports>Sports</OPTION>
+<option value=Computational>Computational</OPTION>
+<option value=Cafeteria>Cafeteria</OPTION>
+<option value=Transport>Transport</OPTION></select>
+<select name="academics" >
+<option value=ACADEMICS>ACADEMICS</OPTION>
+<OPTION VALUE=Courses Offered>Courses Offered</OPTION>
+<option value=Academic Regulations>Academic Regulations</OPTION>
+<option value=Honors & Minor Degree>Honors & Minor Degree</OPTION>
+<option value=Admissions>Admissions</OPTION>
+<option value=Central Committees>Central Committees</OPTION>
+<option value=Student Hand Book>Student Hand Book</OPTION></select>
+<SELECT NAME="Departments" >
+<option value=Departments>Departments</option>
+<OPTION VALUE=CSE>CSE</OPTION>
+<OPTION VALUE=CSD>CSD</OPTION>
+<OPTION VALUE=CSM>CSM</OPTION>
+<OPTION VALUE=CSC>CSC</OPTION>
+<OPTION VALUE=CSB>CSB</OPTION>
+<OPTION VALUE=CIVIL>CIVIL</OPTION>
+<OPTION VALUE=IT>IT</OPTION>
+<OPTION VALUE=EEE>EEE</OPTION>
+<OPTION VALUE=ECE>ECE</OPTION>
+<OPTION VALUE=MECH>MECH</OPTION>
+<OPTION VALUE=MBA>MBA</OPTION>
+</SELECT>
+<SELECT NAME="Placements" >
+<option value=Placements>Placements</option>
+</select><a href="http://localhost:8080/edupermit/index.html">
+<button >sign out</button></a>
+
+
+</div>
+</HEAD><HR>
+
+
+<BODY background="bg4.jpg">
+<center>
+<h1><i><u>"EDUPERMIT"</i></u>-Digital Permission Letter</h1>
+<br><br><br>
+<div align="center">
+<form name="f1" action="gatepage.html"  method="post">
+ <label for="password" style="font-size:30px">Password:</label>
+  <input type="password" id="name" name="name1" maxlength="15" autofocus>
+  <br><br><br>
+
+  </form>
+<center>
+<a href="http://localhost:8080/edupermit/gatepage.html">
+      <button onclick="return validate()" >submit</button></a>
+
+<script>
+    function validate() {
+        var pass = document.forms["f1"]["name1"].value;
+        
+
+        if (pass === "" ) {
+            alert("Enter the password");
+            return false;
+        } else if (pass === "security") {
+		doc.write("success");
+            return true; 
+        } else {
+            alert("Enter the Right Password");
+            return false;
+        }
+    }
+</script>
+
+
+
+
+</center>
+</body>
+</html>

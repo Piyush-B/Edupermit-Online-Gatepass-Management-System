@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .red-section {
+    background-color: red;
+    font-color: white;
+font-size: 40px;
+height: 10vh;
+  } 
+  .logo-section {
+    font-color: solid black
+  font-size: 40px;
+height: 30vh;
+
+  }
+h2
+{
+text-align: right;}
+img
+{
+width: 1000px;
+  height: 150px;}
+
+
+.datetime-container {
+      display: flex;
+      justify-content: space-between;
+      width: 400px; /* Adjust the width as needed */
+      margin: auto;
+    }
+
+    .calendar {
+      width: 48%; /* Adjust the width as needed */
+    }
+
+    .time {
+      width: 48%; /* Adjust the width as needed */
+    }
+
+</style>
+<head>
+<div class="red-section">
+<h2>
+      <button type="submit" value="virtual tour">virtual home</button>  
+ <button type="submit" value="Examination">Examinations</button>
+      <button type="submit" value="IQAC">IQAC</button>  
+      <button type="submit" value="R&D">R&D</button>  
+      <button type="submit" value="IIIC">IIIC</button>  
+      <button type="submit" value="SAC">SAC</button>  
+      <button type="submit" value="Events">Events</button>  
+      <button type="submit" value="Achievements">Achievements</button>  
+<button type="submit" value="Contact Us">Contact Us</button> 
+</h2><hr>
+</div>
+<div class="logo-section">
+<img src="vbitlogo.jpg">
+  <h2>
+<SELECT NAME="ABOUT US" >
+<OPTION VALUE=ABOUT US>ABOUT US</OPTION>
+<OPTION VALUE=Overview>Overview</OPTION>
+<OPTION VALUE=Core Values>Core Values</OPTION>
+<OPTION VALUE=Management>Management</OPTION>
+<OPTION VALUE=Academic Leadership>Academic Leadership</OPTION>
+<OPTION VALUE=Brochure&Policy>Brochure&Policy</OPTION>
+</SELECT>
+<select name="facilities" >
+<option value=FACILITIES>FACILITIES</OPTION>
+<OPTION VALUE=Academics>Academics</OPTION>
+<option value=Central Library>Central Library</OPTION>
+<option value=Infrastructure>Infrastructure</OPTION>
+<option value=Hostels>Hostels</OPTION>
+<option value=Sports>Sports</OPTION>
+<option value=Computational>Computational</OPTION>
+<option value=Cafeteria>Cafeteria</OPTION>
+<option value=Transport>Transport</OPTION></select>
+<select name="academics" >
+<option value=ACADEMICS>ACADEMICS</OPTION>
+<OPTION VALUE=Courses Offered>Courses Offered</OPTION>
+<option value=Academic Regulations>Academic Regulations</OPTION>
+<option value=Honors & Minor Degree>Honors & Minor Degree</OPTION>
+<option value=Admissions>Admissions</OPTION>
+<option value=Central Committees>Central Committees</OPTION>
+<option value=Student Hand Book>Student Hand Book</OPTION></select>
+<SELECT NAME="Departments" >
+<option value=Departments>Departments</option>
+<OPTION VALUE=CSE>CSE</OPTION>
+<OPTION VALUE=CSD>CSD</OPTION>
+<OPTION VALUE=CSM>CSM</OPTION>
+<OPTION VALUE=CSC>CSC</OPTION>
+<OPTION VALUE=CSB>CSB</OPTION>
+<OPTION VALUE=CIVIL>CIVIL</OPTION>
+<OPTION VALUE=IT>IT</OPTION>
+<OPTION VALUE=EEE>EEE</OPTION>
+<OPTION VALUE=ECE>ECE</OPTION>
+<OPTION VALUE=MECH>MECH</OPTION>
+<OPTION VALUE=MBA>MBA</OPTION>
+</SELECT>
+<SELECT NAME="Placements" >
+<option value=Placements>Placements</option>
+</select><a href="http://localhost:8080/edupermit/studentlogin.html">
+<button >sign out</button></a>
+
+
+</div>
+</HEAD><HR>
+<BODY background="bg4.jpg">
+<center>
+<h1><i><u>"EDUPERMIT"</i></u>-Digital Permission Letter</h1>
+<br><br><br>
+<div align="center">
+<form name="f1" action="/action_page.php" method="post">
+ <b> Name:</b>
+  <input type="text" id="name" name="name"  required maxlength="15" autofocus>
+  <br><br><br>
+<b>Roll No:</b>
+  <input type="text" id="roll" name="roll"  required maxlength="15" autofocus>
+  <br>
+<br><br><b>Branch:</b>
+<SELECT NAME="class" >
+<OPTION VALUE=CSE>CSE</OPTION>
+<OPTION VALUE=CSD>CSD</OPTION>
+<OPTION VALUE=CSM>CSM</OPTION>
+<OPTION VALUE=CSC>CSC</OPTION>
+<OPTION VALUE=CSB>CSB</OPTION>
+<OPTION VALUE=CIVIL>CIVIL</OPTION>
+<OPTION VALUE=IT>IT</OPTION>
+<OPTION VALUE=EEE>EEE</OPTION>
+<OPTION VALUE=ECE>ECE</OPTION>
+<OPTION VALUE=MECH>MECH</OPTION>
+<OPTION VALUE=MBA>MBA</OPTION>
+</SELECT>
+<b>SEC:</b>
+<SELECT NAME="SEC" >
+<OPTION VALUE=A>A</OPTION>
+<OPTION VALUE=B>B</OPTION>
+<OPTION VALUE=C>C</OPTION>
+<OPTION VALUE=D>D</OPTION>
+</SELECT>
+<BR><BR>
+<b>Reason:</b>
+<SELECT NAME="Reasons" >
+<OPTION VALUE=Request To >Request To</OPTION>
+<OPTION VALUE=Leave for personal health requiring medical attention.>Leave for personal health requiring medical attention.</OPTION>
+<OPTION VALUE=Leave for Participation in Extracurricular Activities>Leave for Participation in Extracurricular Activities</OPTION>
+<OPTION VALUE=Leave regarding Family Emergency>Leave regarding Family Emergency</OPTION>
+<option value=Leave Due to Injury>Leave Due to Injury</option>
+<option value=Others>Others</option>
+</SELECT>
+<br>
+<textarea name=reason rows="3" cols="20" placeholder="Any Other Reason Specify Here"></textarea>
+<br><br>
+<div class="datetime-container">
+  <div class="calendar">
+    <label for="calendar">Date:</label>
+    <input type="date" id="calendar" name="calendar">
+  </div>
+
+  <div class="time">
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time">
+  </div>
+</div>
+
+ <button type="submit" value="SUBMIT">SUBMIT</button>
+</div>
+</form>
+</BODY>
+</HTML>

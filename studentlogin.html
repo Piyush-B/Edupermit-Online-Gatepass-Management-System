@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Login Page</title>
+  <link rel="stylesheet" href="styles1.css">
+<script src="https://kit.fontawesome.com/84dbda499d.js" crossorigin="anonymous"></script>
+</head>
+<body background="bg4.jpg">
+  <div class="header">
+    <img src="vbitlogo.jpg" alt="Logo">
+  </div>
+   <form name="f2" action = "studentpage.html" method="post">
+  <div class="login-container">
+    <div class="login-form1">
+      <h2><center>Student Login</center></h2>
+<i class="fa-solid fa-user"></i>
+      <input type="text" id="username1" name="name1" placeholder="Username"><br>
+<i class="fa-solid fa-lock"></i>
+      <input type="password" id="password1" name="name2" placeholder="Password"><br>
+<a href="file:///C:/Users/Dell/Desktop/edupermit/studentpage.html">
+      <button onclick="return fun2()" formaction="studentpage.html">Login</button></a><br><br><br>
+<button  formaction="index.html">admin login</button></a>
+<button  formaction="g1.html">security login</button></a>
+
+
+
+
+      
+    </div>
+  </div>
+  <script>
+    function fun2() {
+        var A = document.forms["f2"]["name1"].value;
+        var B = document.forms["f2"]["name2"].value;
+
+        if (A === "" || B === "") {
+            alert("Fill All The Details");
+            return false;
+        } else if (A === "student" && B === "webcap") {
+		doc.write("success");
+            return true; 
+        } else {
+            alert("Please Enter the Right Credentials");
+            return false;
+        }
+    }
+</script>
+  
+</body>
+</html>

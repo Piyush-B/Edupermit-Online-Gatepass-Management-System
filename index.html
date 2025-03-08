@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin login page</title>
+  <link rel="stylesheet" href="styles1.css">
+<script src="https://kit.fontawesome.com/84dbda499d.js" crossorigin="anonymous"></script>
+</head>
+<body background="bg4.jpg">
+  <div class="header">
+    <img src="vbitlogo.jpg" alt="Logo">	
+  </div>
+ <form name="f1" action = "welcome" method="post"> 
+  <div class="login-container">
+    <div class="login-form" ">
+
+      <h2><center>Admin Login</center></h2>
+<i class="fa-solid fa-user"></i>
+
+      <input type="text" name="user" id="username1" placeholder="Username"><br>
+<i class="fa-solid fa-lock"></i>
+      <input type="password" name="pass" id="password1" placeholder="Password" ><br><br>
+<a href="studentpage.html">
+      <button onclick="return fun1()" formaction="adminpage.html">Login</button></a>
+      <br><br><p id="message"></p>
+<button  formaction="studentlogin.html">Student login</button></a>
+
+<button  formaction="g1.html">Security page</button></a>
+
+
+    </div>
+  </div>
+ 
+</form>
+<script>
+    function fun1() {
+        var name1 = document.forms["f1"]["user"].value;
+        var name2 = document.forms["f1"]["pass"].value;
+
+        if (name1 === "" || name2 === "") {
+            alert("Fill All The Details");
+            return false;
+        } else if (name1 === "user" && name2 === "pass") {
+		doc.write("success");
+            return true; 
+        } else {
+            alert("Please Enter the Right Credentials");
+            return false;
+        }
+    }
+</script>
+
+
+</body>
+</html>
